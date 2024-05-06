@@ -11,6 +11,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit some common LineageOS stuff
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+TARGET_BOOT_ANIMATION_RES := 1080
+SAKURA_MAINTAINER := dotkit
+
 # Inherit from X00TD device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
@@ -24,8 +27,8 @@ PRODUCT_MANUFACTURER := asus
 PRODUCT_GMS_CLIENTID_BASE := android-asus
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRODUCT_DEVICE=ASUS_X00T \
-    PRODUCT_NAME=WW_X00T \
+    PRODUCT_DEVICE=ASUS_X00TD \
+    PRODUCT_NAME=WW_X00TD \
     PRIVATE_BUILD_DESC="sdm660_64-user 10 QKQ1 72 release-keys"
 
 # Build fingerprint
