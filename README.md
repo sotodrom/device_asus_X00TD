@@ -22,4 +22,4 @@ It was announced in April 2018 and released in May 2018.
 
 ## Device picture
 
-![Asus Zenfone Max Pro M1](https://i-cdn.phonearena.com/images/articles/320775-image/Asus-ZenFone-Max-Pro-M1.jpg)
+![Asus Zenfone Max Pro M1](https://www.asus.com/media/global/gallery/wbGroUmFQTCFJxbe_setting_xxx_0_90_end_2000.png)
