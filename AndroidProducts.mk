@@ -9,6 +9,6 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/awaken_X00TD.mk
 
 COMMON_LUNCH_CHOICES := \
-    awaken_X00TD-eng \
-    awaken_X00TD-user \
-    awaken_X00TD-userdebug
+    awaken_X00TD-ap1a-eng \
+    awaken_X00TD-ap1a-user \
+    awaken_X00TD-ap1a-userdebug
