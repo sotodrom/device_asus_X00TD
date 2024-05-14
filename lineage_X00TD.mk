@@ -12,7 +12,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 TARGET_BOOT_ANIMATION_RES := 1080
-SAKURA_MAINTAINER := dotkit
+#SAKURA_MAINTAINER := dotkit
+MATRIXX_MAINTAINER := dotkit
+MATRIXX_CHIPSET := SDM660
+MATRIXX_BATTERY := 5000mAh
+MATRIXX_DISPLAY := 1080x2160
 
 # Inherit from X00TD device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
