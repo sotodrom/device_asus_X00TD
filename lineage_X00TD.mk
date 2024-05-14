@@ -18,6 +18,8 @@ MATRIXX_CHIPSET := SDM660
 MATRIXX_BATTERY := 5000mAh
 MATRIXX_DISPLAY := 1080x2160
 
+TARGET_DISABLE_EPPE := true
+
 # Inherit from X00TD device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
