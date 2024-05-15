@@ -17,7 +17,6 @@ $(call inherit-product, $(LOCAL_PATH)/device.mk)
 # Flags for awakenOS
 TARGET_BOOT_ANIMATION_RES := 1080
 USE_PIXEL_CHARGER = true
-TARGET_GAPPS_ARCH := arm64
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := awaken_X00TD
