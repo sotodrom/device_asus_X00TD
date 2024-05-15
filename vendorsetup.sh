@@ -6,6 +6,6 @@ rm -rf device/asus
 git clone --depth=1 https://github.com/sotodrom/device_asus_X00TD -b ursa device/asus/X00TD
 
 rm -rf vendor/asus
-git clone --depth=1 https://github.com/sotodrom/vendor_asus -b u vendor/asus
+git clone --depth=1 https://github.com/sotodrom/vendor_asus -b ursa vendor/asus
 
 export TZ=Asia/Jakarta
