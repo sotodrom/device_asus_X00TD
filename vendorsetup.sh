@@ -9,4 +9,9 @@ git clone --depth=1 https://github.com/sotodrom/device_asus_sdm660-common -b evo
 rm -rf bionic
 git clone --depth=1 https://github.com/sotodrom/bionic -b 14 bionic
 
+rm -rf device/lineage/sepolicy
+rm -rf system/sepolicy
+git clone --depth=1 https://github.com/sotodrom/android_device_lineage_sepolicy -b 14 device/lineage/sepolicy
+git clone --depth=1 https://github.com/sotodrom/android_system_sepolicy -b 14 system/sepolicy
+
 export TZ=Asia/Jakarta
