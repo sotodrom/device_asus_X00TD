@@ -19,6 +19,9 @@ rm -rf build/soong
 rm -rf system/core
 git clone --depth=1 https://github.com/sotodrom/android_build -b 14 build/make
 git clone --depth=1 https://github.com/sotodrom/android_build_soong -b 14 build/soong
-git clone --depth=1  https://github.com/sotodrom/android_system_core -b 14.0 system/core
+git clone --depth=1 https://github.com/sotodrom/android_system_core -b 14.0 system/core
+
+rm -rf hardware/lineage/interfaces
+git clone --depth=1 https://github.com/sotodrom/android_hardware_lineage_interfaces
 
 export TZ=Asia/Jakarta
