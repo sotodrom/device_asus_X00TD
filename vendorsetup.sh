@@ -9,8 +9,8 @@ git clone --depth=1 https://github.com/sotodrom/device_asus_sdm660-common -b evo
 rm -rf build/soong
 git clone --depth=1 https://github.com/sotodrom/android_build_soong -b 14 build/soong
 
-rm -rf hardware/lineage/interfaces
-git clone --depth=1 https://github.com/sotodrom/android_hardware_lineage_interfaces -b 14 hardware/lineage/interfaces
+#rm -rf hardware/lineage/interfaces
+#git clone --depth=1 https://github.com/sotodrom/android_hardware_lineage_interfaces -b 14 hardware/lineage/interfaces
 
 rm -rf device/lineage/sepolicy
 git clone --depth=1 https://github.com/sotodrom/android_device_lineage_sepolicy -b 14 device/lineage/sepolicy
