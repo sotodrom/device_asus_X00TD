@@ -18,4 +18,7 @@ git clone --depth=1 https://github.com/sotodrom/android_device_lineage_sepolicy 
 rm -rf device/qcom/sepolicy-legacy-um
 git clone --depth=1 https://github.com/sotodrom/android_device_qcom_sepolicy -b lineage-21.0-legacy-um device/qcom/sepolicy-legacy-um
 
+rm -rf frameworks/base
+git clone --depth=1 https://github.com/Tiktodz/android_frameworks_base frameworks/base
+
 export TZ=Asia/Jakarta
