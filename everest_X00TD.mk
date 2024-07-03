@@ -13,8 +13,8 @@ $(call inherit-product, vendor/everest/config/common_full_phone.mk)
 
 EVEREST_MAINTAINER := ∂σткιт
 TARGET_SUPPORTS_BLUR := true
-WITH_GAPPS := true
-TARGET_INCLUDE_PIXEL_LAUNCHER := false
+WITH_GAPPS := false
+#TARGET_INCLUDE_PIXEL_LAUNCHER := false
 
 # Inherit from X00TD device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
