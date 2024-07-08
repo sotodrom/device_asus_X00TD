@@ -5,7 +5,7 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/everest_X00TD.mk
+    $(LOCAL_DIR)/blaze_X00TD.mk
 
 COMMON_LUNCH_CHOICES := \
-    everest_X00TD-userdebug
+    blaze_X00TD-userdebug

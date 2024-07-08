@@ -8,11 +8,20 @@
 $(call inherit-product, device/asus/sdm660-common/sdm660.mk)
 
 # Inherit keys from source
-$(call inherit-product-if-exists, vendor/extra/product.mk)
+$(call inherit-product-if-exists, vendor/lineage-priv/keys/keys.mk)
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2160
 TARGET_SCREEN_WIDTH := 1080
+
+ifneq (eng,$(TARGET_BUILD_VARIANT))
+ifneq (,$(wildcard vendor/lineage-priv/keys/releasekey.pk8))
+PRODUCT_DEFAULT_DEV_CERTIFICATE := vendor/lineage-priv/keys/releasekey
+endif
+ifneq (,$(wildcard vendor/lineage-priv/keys/otakey.x509.pem))
+PRODUCT_OTA_PUBLIC_KEYS := vendor/lineage-priv/keys/otakey.x509.pem
+endif
+endif
 
 # Fingerprint
 PRODUCT_PACKAGES += \
