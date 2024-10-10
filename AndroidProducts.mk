@@ -6,9 +6,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/awaken_X00TD.mk
+    $(LOCAL_DIR)/lineage_X00TD.mk
 
 COMMON_LUNCH_CHOICES := \
-    awaken_X00TD-ap1a-eng \
-    awaken_X00TD-ap1a-user \
-    awaken_X00TD-ap1a-userdebug
+    lineage_X00TD-ap2a-eng \
+    lineage_X00TD-ap2a-user \
+    lineage_X00TD-ap2a-userdebug

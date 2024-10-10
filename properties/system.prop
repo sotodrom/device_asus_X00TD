@@ -3,7 +3,7 @@
 #
 
 # Audio resampler
-af.resampler.quality=255
+persist.af.resampler.quality=255
 
 # Bluetooth
 bt.max.hfpclient.connections=1
@@ -36,16 +36,17 @@ vendor.display.disable_skip_validate=1
 # DPM
 persist.vendor.dpm.feature=1
 
-# Frees More RAM
-persist.sys.purgeable_assets=1
-
 # Fingerprint
 persist.sys.fingerauto=1
 persist.sys.iscdfinger_998eas=1
 
-# Fling
+# Fling Velocity
 ro.min.fling_velocity=160
 ro.max.fling_velocity=20000
+ro.vendor.qti.cgroup_follow.enable=true 
+persist.vendor.qti.inputopts.enable=true 
+persist.vendor.qti.inputopts.movetouchslop=0.6 
+ro.qcom.adreno.qgl.ShaderStorageImageExtendedFormats=0
 
 # Filesystem
 fs_mgr.overlayfs.prefer_cache_backing_storage=true
@@ -54,9 +55,7 @@ fs_mgr.overlayfs.prefer_cache_backing_storage=true
 persist.vendor.overlay.izat.optin=rro
 
 # Graphics
-debug.hwui.skia_use_perfetto_track_events=false
-debug.hwui.skia_tracing_enabled=false
-debug.sf.auto_latch_unsignaled=false
+debug.sf.latch_unsignaled=0
 dev.pm.dyn_samplingrate=1
 persist.demo.hdmirotationlock=false
 persist.hwc.enable_vds=1
@@ -73,7 +72,7 @@ ro.hwui.texture_cache_flushrate=0.4
 ro.hwui.text_small_cache_width=1024
 ro.hwui.text_small_cache_height=1024
 ro.hwui.text_large_cache_width=2048
-ro.hwui.text_large_cache_height=1024
+ro.hwui.text_large_cache_height=2048
 
 # Media
 media.settings.xml=/vendor/etc/media_profiles_vendor.xml
@@ -82,12 +81,6 @@ vidc.enc.target_support_bframe=1
 vendor.vidc.enc.disable_bframes=1
 vendor.vidc.dec.enable.downscalar=1
 vendor.vidc.enc.disable.pq=true
-
-# Iorapd
-ro.iorapd.enable=false
-iorapd.perfetto.enable=false
-iorapd.readahead.enable=false
-persist.device_config.runtime_native_boot.iorap_readahead_enable=false
 
 # Netflix
 ro.netflix.bsp_rev=Q660-13149-1
@@ -129,6 +122,3 @@ persist.timed.enable=true
 # WiFi Display
 persist.debug.wfd.enable=1
 persist.sys.wfd.virtual=0
-
-# Zygote
-persist.device_config.runtime_native.usap_pool_enabled=true
