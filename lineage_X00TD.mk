@@ -17,6 +17,7 @@ $(call inherit-product, $(LOCAL_PATH)/device.mk)
 # Flags for lineageOS
 TARGET_BOOT_ANIMATION_RES := 1080
 SAKURA_MAINTAINER := DOTKIT
+TARGET_DISABLE_EPPE := true
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := lineage_X00TD
