@@ -1,5 +1,5 @@
 rm -rf kernel/asus/sdm660
-git clone --depth=1 --recursive https://github.com/texascake/android_kernel_asus_sdm660 -b 14-eas-su kernel/asus/sdm660
+git clone --depth=1 --recursive https://github.com/texascake/kernel_asus_sdm660 -b 14-eas-su kernel/asus/sdm660
 rm -rf kernel/asus/sdm660/KernelSU/userspace
 
 rm -rf device/asus/sdm660-common
