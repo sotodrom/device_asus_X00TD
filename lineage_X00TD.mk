@@ -12,21 +12,16 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 TARGET_BOOT_ANIMATION_RES := 1080
-#SAKURA_MAINTAINER := dotkit
-MATRIXX_MAINTAINER := dotkit
-MATRIXX_CHIPSET := SDM660
-MATRIXX_BATTERY := 5000mAh
-MATRIXX_DISPLAY := 1080x2160
+EVO_BUILD_TYPE := Unofficial
 
 # GApps flags
 TARGET_GAPPS_ARCH := arm64
-BUILD_GOOGLE_CONTACTS := true
-BUILD_GOOGLE_DIALER := true
-BUILD_GOOGLE_MESSAGE := true
+WITH_GMS := false
+BUILD_BCR := true
+TARGET_SUPPORT_BOOT_ANIMATIONS := true
+TARGET_INCLUDE_ACCORD := false
 
 TARGET_DISABLE_EPPE := true
-TARGET_EXCLUDES_AUDIOFX := true
-TARGET_EXCLUDES_AUXIO := true
 
 # Inherit from X00TD device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)

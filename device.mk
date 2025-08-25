@@ -10,6 +10,7 @@ $(call inherit-product, device/asus/sdm660-common/sdm660.mk)
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2160
 TARGET_SCREEN_WIDTH := 1080
+TARGET_BOOTANIMATION_HALF_RES := true
 
 # Fingerprint
 PRODUCT_PACKAGES += \
@@ -18,9 +19,6 @@ PRODUCT_PACKAGES += \
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay
-
-# PRODUCT_SHIPPING_API_LEVEL indicates the first api level, device has been commercially launched on.
-PRODUCT_SHIPPING_API_LEVEL := 27
 
 # Ramdisk
 PRODUCT_PACKAGES += \
