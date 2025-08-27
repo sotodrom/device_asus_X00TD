@@ -17,4 +17,6 @@ git clone --depth=1 https://github.com/inexdroid/hardware_qcom-caf_msm8998_media
 rm -rf vendor/lineage-priv
 git clone https://github.com/ardia-kun/vendor -b 14-backup vlp && cp -R vlp/* vendor/ && rm -rf vlp
 
+sed -i 's/19/21/g' prebuilts/sdk/current/androidx/m2repository/androidx/preference/preference/1.3.0-alpha01/manifest/AndroidManifest.xml
+
 export TZ=Asia/Jakarta
