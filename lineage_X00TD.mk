@@ -22,7 +22,7 @@ BUILD_BCR := true
 TARGET_SUPPORT_BOOT_ANIMATIONS := true
 TARGET_INCLUDE_ACCORD := false
 
-#TARGET_DISABLE_EPPE := true
+TARGET_DISABLE_EPPE := true
 
 # Inherit from X00TD device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
