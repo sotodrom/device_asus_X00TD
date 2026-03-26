@@ -16,10 +16,15 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
 # Inherit some flags.
+MATRIXX_MAINTAINER := EunjiX
 SYSTEM_OPTIMIZE_JAVA := true
 SYSTEMUI_OPTIMIZE_JAVA := true
-TARGET_EXCLUDES_AUDIOFX := true
+TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_BUILD_DEVICE_AS_WEBCAM := true
+TARGET_EXCLUDES_AUDIOFX := true
+TARGET_INCLUDE_ACCORD := false
+WITH_BCR := false
+WITH_GMS := false
 
 # Device identifier
 # This must come after all inclusions.
