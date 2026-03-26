@@ -16,10 +16,16 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
 # Inherit some flags.
+AXION_CAMERA_REAR_INFO := 13,5
+AXION_CAMERA_FRONT_INFO := 8
+AXION_MAINTAINER := EunjiX
+AXION_PROCESSOR := Snapdragon™_636
 SYSTEM_OPTIMIZE_JAVA := true
 SYSTEMUI_OPTIMIZE_JAVA := true
-TARGET_EXCLUDES_AUDIOFX := true
+TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_BUILD_DEVICE_AS_WEBCAM := true
+TARGET_EXCLUDES_AUDIOFX := true
+TARGET_INCLUDE_AXFX := false
 
 # Device identifier
 # This must come after all inclusions.
