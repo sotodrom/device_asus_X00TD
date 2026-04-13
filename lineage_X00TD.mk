@@ -16,7 +16,6 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
 # Inherit some flags.
-MATRIXX_MAINTAINER := EunjiX
 SYSTEM_OPTIMIZE_JAVA := true
 SYSTEMUI_OPTIMIZE_JAVA := true
 TARGET_BOOT_ANIMATION_RES := 1080
